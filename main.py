@@ -5,6 +5,10 @@ from dotenv import load_dotenv
 BOT_NAME = "Dumb Bitch"
 
 
+def start_computer():
+    pass
+
+
 class MyClient(discord.Client):
     async def on_ready(self):
         print(f"Logged on as {self.user}.")
