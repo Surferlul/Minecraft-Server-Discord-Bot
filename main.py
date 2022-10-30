@@ -8,6 +8,10 @@ intents = discord.Intents.default()
 bot = discord.Client(intents=intents)
 
 
+def start_computer():
+    pass
+
+
 @bot.event
 async def on_ready():
     print(f"{bot.user} has logged in.")
