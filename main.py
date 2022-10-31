@@ -43,6 +43,7 @@ class MyClient(discord.Client):
         if reaction.message == self.information_message:
             if reaction.emoji == "▶":
                 self.computer_manager.start_computer()
+                await reaction.message.remove_reaction("▶", user)
 
 
 if __name__ == "__main__":
